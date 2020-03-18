@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+//hàm tính tuổi
+    function countAge(yourYearOfBirth) {
+        let d=new Date();
+        let n=d.getFullYear();
+        let yourAge=0
+        if(yourYearOfBirth>n){
+            alert("không hợp lệ");
+        }else{
+            yourAge=(n-yourYearOfBirth);
+        }
+        return yourAge;
+    }
+    let year=Number(prompt("nhap năm sinh của bạn: "));
+    let yourage=countAge(year);
+    document.write("năm nay bạn "+yourage);
+
+</script>
+</html>
